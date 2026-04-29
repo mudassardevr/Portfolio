@@ -157,7 +157,7 @@ function Navbar() {
 
           {/* ------------ Download Resume Button ----------------- */}
           <a
-            href=""
+            href="/Resume/Mudasar_khan.pdf" download
             className={`mt-5 w-full bg-gray-900 text-white font-semibold py-4 rounded-2xl
               hover:bg-orange-500 duration-300 text-center
               transition-all
