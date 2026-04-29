@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+body{
+    font-family: "Playfair Display", serif;
+    background-color: #f8fdf8;
+}
+
+@theme {
+  --scroll-left: scrollLeft 30s linear infinite;
+  --scroll-right: scrollRight 22s linear infinite;
+  --scroll-left-slow: scrollLeft 28s linear infinite;
+}
+
+/* animations OUTSIDE @theme */
+@keyframes scrollLeft {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-33.333%); }
+}
+
+@keyframes scrollRight {
+  from { transform: translateX(-33.333%); }
+  to   { transform: translateX(0); }
+}
+
+/* 
+footer */
+.marquee {
+  animation: marquee 18s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.social-btn {
+  @apply w-9 h-9 flex items-center justify-center border border-[#222] rounded-full text-[#555] hover:bg-[#c8f060] hover:text-black transition;
+}
+
+/* scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+/* Education */
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeUp {
+  animation: fadeUp 0.4s ease forwards;
+}
