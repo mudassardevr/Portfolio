@@ -29,14 +29,14 @@ function Contact() {
 
     emailjs
       .send(
-        "service_z486kst",
-        "template_s5lk9na",
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
         {
           name: form.name,
           email: form.email,
           message: form.message,
         },
-        "T460NZTN-3A5IU3nE",
+         import.meta.env.VITE_PUBLIC_KEY,
       )
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
@@ -61,11 +61,7 @@ function Contact() {
     <>
       <div className="text-3xl font-bold text-center mb-5">Contact</div>
 
-      <div
-        className="max-w-xl mx-auto p-8 mb-6 
-bg-[#161616] border border-[#222] 
-rounded-2xl shadow-lg"
-      >
+      <div className="max-w-xl mx-auto p-8 mb-6 bg-[#161616] border border-[#222] rounded-2xl shadow-lg">
         {/* -----------Name------------ */}
         <div>
           <label className="text-sm text-gray-400">Name</label>
@@ -75,12 +71,7 @@ rounded-2xl shadow-lg"
             onChange={handleOnChange}
             type="text"
             placeholder="Enter Your Name"
-            className="w-full mt-1 px-4 py-3 
-      bg-[#0e0e0e] border border-[#2a2a2a] rounded-lg 
-      text-white text-sm placeholder-gray-500
-      focus:outline-none focus:border-[#5DCAA5]
-      focus:shadow-[0_0_10px_rgba(93,202,165,0.2)]
-      transition-all duration-300"
+            className="w-full mt-1 px-4 py-3 bg-[#0e0e0e] border border-[#2a2a2a] rounded-lg text-white text-sm placeholder-gray-500 focus:outline-none focus:border-[#5DCAA5] focus:shadow-[0_0_10px_rgba(93,202,165,0.2)] transition-all duration-300"
           />
         </div>
 
@@ -93,12 +84,7 @@ rounded-2xl shadow-lg"
             onChange={handleOnChange}
             type="email"
             placeholder="Enter Your Email"
-            className="w-full mt-1 px-4 py-3 
-      bg-[#0e0e0e] border border-[#2a2a2a] rounded-lg 
-      text-white text-sm placeholder-gray-500
-      focus:outline-none focus:border-[#5DCAA5]
-      focus:shadow-[0_0_10px_rgba(93,202,165,0.2)]
-      transition-all duration-300"
+            className="w-full mt-1 px-4 py-3 bg-[#0e0e0e] border border-[#2a2a2a] rounded-lg text-white text-sm placeholder-gray-500 focus:outline-none focus:border-[#5DCAA5] focus:shadow-[0_0_10px_rgba(93,202,165,0.2)] transition-all duration-300"
           />
         </div>
 
@@ -111,12 +97,7 @@ rounded-2xl shadow-lg"
             onChange={handleOnChange}
             rows={5}
             placeholder="Type Your Message"
-            className="w-full mt-1 px-4 py-3 
-      bg-[#0e0e0e] border border-[#2a2a2a] rounded-lg 
-      text-white text-sm placeholder-gray-500 resize-none
-      focus:outline-none focus:border-[#5DCAA5]
-      focus:shadow-[0_0_10px_rgba(93,202,165,0.2)]
-      transition-all duration-300"
+            className="w-full mt-1 px-4 py-3 bg-[#0e0e0e] border border-[#2a2a2a] rounded-lg text-white text-sm placeholder-gray-500 resize-none focus:outline-none focus:border-[#5DCAA5] focus:shadow-[0_0_10px_rgba(93,202,165,0.2)] transition-all duration-300"
           ></textarea>
         </div>
 
