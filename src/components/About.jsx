@@ -7,7 +7,7 @@ function About({ src = "/your-photo.jpg", name = "Mudassar" }) {
       <div className="p-4 md:flex items-center md:justify-center">
         {/* ------photoFrame-------- */}
         <div className="left">
-          <div className="flex items-center justify-center p-10">
+          <div className="flex items-center justify-center p-20">
             <div
               className="relative bg-white p-3 pb-10 rounded-sm w-44 -rotate-2 transition-all duration-300 ease-in-out  hover:rotate-0 hover:scale-105 hover:shadow-[6px_10px_30px_rgba(0,0,0,0.2)]"
               style={{ boxShadow: "3px 6px 24px rgba(0,0,0,0.15)" }}
@@ -60,6 +60,24 @@ function About({ src = "/your-photo.jpg", name = "Mudassar" }) {
             using React, Tailwind, Node.js, and MongoDB. I enjoy solving
             real-world problems and continuously improving my skills.
           </p>
+          <div className="flex gap-4 justify-center md:justify-start mt-2">
+            <a
+              href="/Resume/Mudasar_khan.pdf"
+              download
+              className="px-6 py-2 bg-black text-white rounded-lg shadow-md hover:scale-105 transition-all duration-300"
+            >
+              ⬇ Download Resume
+            </a>
+
+            <a
+              href="/Resume/Mudasar_khan.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-2 border border-black rounded-lg hover:bg-black hover:text-white transition-all duration-300"
+            >
+              View Resume
+            </a>
+          </div>
         </div>
       </div>
     </>

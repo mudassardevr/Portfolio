@@ -61,7 +61,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="h-14.25 flex items-center justify-between shadow-sm p-4">
+      <nav className="h-14.25 flex items-center justify-between shadow-sm p-4 fixed w-full bg-white/90 z-50">
         {/* -----logo------------ */}
         <div className="flex">
           <h1 className="text-6xl font-bold text-[#0396FF] ">M</h1>
