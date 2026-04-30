@@ -109,12 +109,12 @@ function Skills() {
       <div className="mb-7">
         <div className="p-4 text-3xl font-bold text-center">Skills</div>
         <div className="w-full overflow-hidden group">
-          <div className="flex w-max gap-4 px-4 animate-[var(--scroll-left)] group-hover:[animation-play-state:paused]">
+          <div className="flex w-max gap-4 px-4 animate-(--scroll-left) group-hover:[animation-play-state:paused]">
             {track.map((img, i) => (
               <div
                 key={i}
                 style={{ background: img.bg }}
-                className="flex-shrink-0 w-36 h-36 rounded-2xl flex flex-col items-center justify-center gap-2 mx-2 border border-black/5"
+                className="shrink-0 w-36 h-36 rounded-2xl flex flex-col items-center justify-center gap-2 mx-2 border border-black/5"
               >
                 {/* <span className="text-3xl">{img.icon}</span> */}
                 <img
