@@ -6,10 +6,12 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import { ToastContainer } from "react-toastify";
 
 function App() {
   return (
     <>
+    <ToastContainer/>
       <Navbar />
       
       <section id="home">

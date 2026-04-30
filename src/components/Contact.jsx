@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
 
 function Contact() {
   const [loading, setLoading] = useState(false);
@@ -19,10 +20,9 @@ function Contact() {
   };
 
   const handleSendEmail = () => {
-    console.log(form); //
 
     if (!form.name || !form.email || !form.message) {
-      console.log("Please fill all fields");
+      toast.error("Please fill all fields");
     }
 
     setLoading(true); //start loading
@@ -39,14 +39,12 @@ function Contact() {
          import.meta.env.VITE_PUBLIC_KEY,
       )
       .then((response) => {
-        console.log("SUCCESS!", response.status, response.text);
-        console.log("Message sent successfully ");
+        toast.success("Message sent successfully ");
         setForm({ name: "", email: "", message: "" });
         setLoading(false); // stop loading
       })
       .catch((error) => {
-        console.log("FAILED...", error);
-        console.log("Something went wrong ❌");
+        toast.error("Something went wrong");
         setLoading(false); // stop loading
       });
     //alert/notification
