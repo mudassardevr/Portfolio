@@ -28,7 +28,7 @@ const educationData = [
     year: "2024",
     degree: "Intermediate (BiPC)",
     school: "Sri Kakatiya Jr. College, Nizamabad",
-    desc: "Completed HTML/CSS portfolio projects, vanilla JS apps, and React single-page applications. Established deep understanding of web fundamentals.",
+    desc: "Completed Intermediate education with a focus on Biology, Physics, and Chemistry, building a strong foundation in scientific concepts and analytical thinking.",
     tags: [],
   },
   {
