@@ -42,7 +42,7 @@ const educationData = [
 
 function Education() {
   return (
-    <>
+    <> 
       <div className="text-3xl font-bold text-center">Education</div>
 
       <section className="bg-[#f8fdf8] text-[#f0ede8] min-h-screen py-16 px-5 flex justify-center">
