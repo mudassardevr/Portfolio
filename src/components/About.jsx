@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-function About({ src = "/your-photo.jpg", name = "Mudassar" }) {
+function About({ src = "/images/profileImage.jpg", name = "Mudassar" }) {
   return (
     <>
       <div className="p-4 md:flex items-center md:justify-center">
